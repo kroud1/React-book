@@ -246,7 +246,7 @@ export default function SignUP() {
               fullWidth
               onClick={() => signUpHandler()}
               variant="contained"
-              sx={{ bgcolor: "#f0a500" }}
+              sx={{ bgcolor: "#f0a500", marginTop: "2vw" }}
             >
               회원 가입
             </Button>
