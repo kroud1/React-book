@@ -8,6 +8,9 @@ import User from "./views/User";
 import SignUp from "./views/AuthenticationView/SignUpView";
 import SignIn from "./views/AuthenticationView/SignInView";
 import JsCookie from "./cookies/views";
+import UserAskList from "./views/Ask/UserAskList";
+import UserAskWriter from "./views/Ask/UserAskWriter";
+import UserAskUpdate from "./views/Ask/UserAskUpdate";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         />
         <Route path="/user" element={<User />} />
         <Route path="/jsCookie" element={<JsCookie />} />
+        <Route path="/userAskList" element={<UserAskList />} />
+        <Route path="/userAskWriter" element={<UserAskWriter />} />
+        <Route path="/userAskUpdate/:askId" element={<UserAskUpdate />} />
       </Routes>
     </>
   );
